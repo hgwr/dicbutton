@@ -1,0 +1,11 @@
+{
+  "name": "dicbutton",
+  "version": "0.1",
+  "description": "Add dictionary buttons to Google home page",
+  "content_scripts": [ {
+      "js": [ "dicbutton.js" ],
+      "matches": [ "http://www.google.com/search*",
+                   "http://www.google.co.jp/search*" ],
+      "run_at": "document_start"
+  } ]
+}
