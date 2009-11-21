@@ -1,7 +1,7 @@
 {
   "name": "dicbutton",
   "version": "0.1",
-  "description": "Add dictionary buttons to Google home page",
+  "description": "Adding Useful Buttons to Google Search",
   "update_url": "http://www.moreslowly.jp/chrome/extensions/dicbutton/updates.xml",
   "content_scripts": [ {
       "js": [ "dicbutton.js" ],
