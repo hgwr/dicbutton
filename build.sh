@@ -3,7 +3,7 @@
 CHROME=/opt/google/chrome/google-chrome
 APP=dicbutton
 
-if [ -d build ]; then
+if [ \! -d build ]; then
   mkdir build
 fi
 
