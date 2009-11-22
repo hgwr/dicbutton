@@ -1,6 +1,6 @@
 {
   "name": "dicbutton",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Adding Useful Buttons to Google Search",
   "update_url": "http://www.moreslowly.jp/chrome/extensions/dicbutton/updates.xml",
   "content_scripts": [ {
