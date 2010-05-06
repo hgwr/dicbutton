@@ -17,7 +17,7 @@ if [ "$ans" != 'yes' ]; then
 fi
 
 git archive --format=tar --prefix="build/${APP}/" HEAD | tar xvf -
-rm build/adb/.gitignore
-rm build/adb/build.sh
+rm "build/${APP}/.gitignore"
+rm "build/${APP}/build.sh"
 
 echo $CHROME --pack-extension="build/${APP}" --pack-extension-key="../${APP}.pem"
