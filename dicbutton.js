@@ -7,12 +7,14 @@ function getFirstElementByXPath(xpath, node) {
 
 function appendButton(name, value, listener, accessKey) {
   var nb = document.createElement("input");
+  var td = document.createElement("td");
   nb.type = "button";
   nb.name = name;
   nb.value = value;
   nb.accessKey = accessKey;
   nb.addEventListener("click", listener, true);
-  getFirstElementByXPath('//input[@type="submit"]').parentNode.appendChild(nb);
+  td.appendChild(nb);
+  getFirstElementByXPath('//form[@action="/search"]//tr').appendChild(td);
   return nb;
 }
 
