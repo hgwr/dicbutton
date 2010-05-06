@@ -16,7 +16,7 @@ if [ "$ans" != 'yes' ]; then
   exit
 fi
 
-git-archive --format=tar --prefix="build/${APP}/" HEAD | tar xvf -
+git archive --format=tar --prefix="build/${APP}/" HEAD | tar xvf -
 rm build/adb/.gitignore
 rm build/adb/build.sh
 
