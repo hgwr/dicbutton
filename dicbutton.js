@@ -38,8 +38,14 @@ function onWikipediaEnglishClicked(e) {
   location.href = "http://en.wikipedia.org/wiki/Special:Search?search=" + q;
 }
 
+function onGoogleEnglishClicked(e) {
+  var q = getFirstElementByXPath('//input[@name="q"]').value;
+  location.href = "http://www.google.com/search?complete=1&hl=en&safe=off&aq=f&q=" + q;
+}
+
 document.addEventListener("DOMContentLoaded",
                           function () {
+                            appendButton("engG", "G英", onGoogleEnglishClicked, "g");
                             appendButton("alcG", "ALC", onAlcClicked, "a");
                             appendButton("ydG", "Y辞", onYdClicked, "y");
                             appendButton("wikipediaG", "W", onWikipediaClicked, "w");
